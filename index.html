@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pokemon Duel — Модулі та Класи</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pokemon Duel (модульна версія)</h1>
+    <div class="arena">
+      <div class="fighter" id="player1">
+        <h2 id="p1-name">Герой</h2>
+        <div class="hp-bar">
+          <div class="hp-fill" id="p1-hp"></div>
+        </div>
+        <div class="hp-text" id="p1-hp-text"></div>
+        <img id="p1-img" src="" alt="player1" />
+      </div>
+
+      <div class="controls">
+        <button id="attack">Атакувати</button>
+        <button id="strong">Сильна атака</button>
+        <button id="heal">Вилікуватись</button>
+        <div id="log"></div>
+      </div>
+
+      <div class="fighter" id="player2">
+        <h2 id="p2-name">Противник</h2>
+        <div class="hp-bar">
+          <div class="hp-fill" id="p2-hp"></div>
+        </div>
+        <div class="hp-text" id="p2-hp-text"></div>
+        <img id="p2-img" src="" alt="player2" />
+      </div>
+    </div>
+
+    <footer>
+      <small>Проект: рефакторинг у модулі. Відкрийте index.html у браузері або запустіть через Live Server / Visual Studio.</small>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

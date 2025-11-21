@@ -1,0 +1,23 @@
+
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#10b981;
+  --danger:#ef4444;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, Arial, sans-serif;color:#e6eef8}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#051025);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.container{width:100%;max-width:980px;background:var(--card);padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+h1{text-align:center;margin:4px 0 16px}
+.arena{display:grid;grid-template-columns: 1fr 360px 1fr;gap:16px;align-items:center}
+.fighter{background:var(--glass);padding:12px;border-radius:8px;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+.fighter img{width:160px;height:160px;object-fit:contain;margin-top:8px}
+.hp-bar{width:100%;height:20px;background:rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;margin-top:8px}
+.hp-fill{height:100%;width:100%;background:linear-gradient(90deg,var(--accent),#60a5fa);transition:width 400ms ease}
+.hp-text{margin-top:6px;font-weight:600}
+.controls{background:var(--glass);padding:12px;border-radius:8px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.controls button{padding:10px 14px;border-radius:8px;border:0;background:#0ea5a7;color:white;cursor:pointer;font-weight:600}
+.controls button:active{transform:translateY(1px)}
+#log{max-height:200px;overflow:auto;width:100%;background:rgba(0,0,0,0.25);padding:8px;border-radius:6px;font-size:13px}
+footer{margin-top:12px;text-align:center;color:rgba(255,255,255,0.6)}
